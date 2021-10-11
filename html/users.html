@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/users.css">
+    <link rel="stylesheet" href="../css/orders.css">
+    <title>users</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logout-wrapper">
+                <div class="logo-menu">
+                    <div class="logo_name_wrapper">
+                        <img class="logo" src="	https://edu-web-fundamentals.web.app/static/media/logo.58169365.png"
+                            alt="">
+                        <p class="logo-name">Kafene</p>
+                    </div>
+                    <div>
+                        <a  href="../html/orders.html">Orders</a>
+                        <a href="../html/products.html">Products</a>
+                        <a class="active"href="../html/users.html">Users</a>
+                    </div>
+                </div>
+                <a id="logout-btn" href="../html/index.html">Logout</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div >
+                <h1 style="font-size: 32px; font-weight: 800;">Users</h1>
+                <div style="text-align: center;">
+                <input type="text" id="my-input" placeholder="Search by Name" style="width: 40%; padding: 10px;">
+                <button id="reset">Reset</button>
+                </div>
+                <div class="table-filter-wrapper">
+                    <div class="tables-wrapper">
+                        <table id="table">
+                            <tr>
+                                <th>ID</th>
+                                <th>User Avatar</th>
+                                <th>Full Name</th>
+                                <th>DoB</th>
+                                <th>Gender</th>
+                                <th>Current Location</th>
+                            </tr>
+                            <tbody id="tbody" >
+                                <tr class="table-data">
+                                    <!-- <td>151515</td>
+                                    <td>John</td>
+                                    <td>61814</td>
+                                    <td>56451</td>
+                                    <td>sakjd</td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="../js/users.js"></script>
+</body>
+</html>
+
+    
