@@ -23,7 +23,7 @@ function validateform(e){
         return false;  
         }
         
-        else if(username === username && password === password){
+        else if(username === password){
             alert("Login Successful")
             
             window.location.assign("../html/orders.html")
