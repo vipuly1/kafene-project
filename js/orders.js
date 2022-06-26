@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 
-    if(localStorage.getItem("loginStatus") == null || localStorage.getItem == undefined || localStorage.getItem == "false"){
+    if(localStorage.getItem("loginStatus") == null || localStorage.getItem("loginStatus") == undefined || localStorage.getItem("loginStatus") == "false"){
         alert("Please login")
         window.location.assign("../html/index.html")
     }

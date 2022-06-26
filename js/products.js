@@ -1,10 +1,9 @@
 $(document).ready(function(){
-
-    if(localStorage.getItem("loginStatus") == null || localStorage.getItem == undefined || localStorage.getItem == "false"){
+    console.log(localStorage.getItem("loginStatus"))
+    if(localStorage.getItem("loginStatus") == null || localStorage.getItem("loginStatus") == undefined || localStorage.getItem("loginStatus") == "false"){
         alert("Please login")
         window.location.assign("../html/index.html")
     }
-
 
 
 let productList = []
@@ -68,7 +67,6 @@ $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products", function (r
 
     for (let i = 0; i < productList.length; i++) {
         presentDate = new Date()
-        console.log(productList)
         if (presentDate > new Date(productList[i].expiryDate)) {
             expiredList.push(productList[i])
         }
@@ -85,6 +83,5 @@ $("#logout-btn").click(function(){
     localStorage.setItem("loginStatus", false)
     window.location.assign("../html/index.html")
 })
-
 
 })

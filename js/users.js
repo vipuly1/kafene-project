@@ -1,7 +1,14 @@
+$(document).ready(function(){
+
+    if(localStorage.getItem("loginStatus") == null || localStorage.getItem("loginStatus") == undefined || localStorage.getItem("loginStatus") == "false"){
+        alert("Please login")
+        window.location.assign("../html/index.html")
+    }
 
 searchInput = document.getElementById("my-input")
 console.log(searchInput)
-userList = []
+let userList = []
+console.log("this", userList)
 
 
 
@@ -63,31 +70,10 @@ $("#logout-btn").click(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/users", function (response) {
-    console.log(response)
-    renderUsersList(response)
-    userList = response
+    userList = response.slice(0,28)
+    console.log(userList)
+    renderUsersList(userList)
 
-
-
+})
 })
