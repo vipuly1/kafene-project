@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     if(localStorage.getItem("loginStatus") == null || localStorage.getItem("loginStatus") == undefined || localStorage.getItem("loginStatus") == "false"){
         alert("Please login")
-        window.location.assign("../html/index.html")
+        window.location.assign("../index.html")
     }
 
 searchInput = document.getElementById("my-input")
@@ -64,7 +64,7 @@ $("#my-input").on("change",function(e){
 
 $("#logout-btn").click(function(){
     localStorage.setItem("loginStatus", false)
-    window.location.assign("../html/index.html")
+    window.location.assign("../index.html")
 })
 
 

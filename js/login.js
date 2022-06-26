@@ -26,7 +26,7 @@ function validateform(e){
         else if(username === password){
             alert("Login Successful")
             
-            window.location.assign("../html/orders.html")
+            window.location.assign("./html/orders.html")
             localStorage.setItem("loginStatus", true)
 
         }

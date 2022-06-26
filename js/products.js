@@ -2,7 +2,7 @@ $(document).ready(function(){
     console.log(localStorage.getItem("loginStatus"))
     if(localStorage.getItem("loginStatus") == null || localStorage.getItem("loginStatus") == undefined || localStorage.getItem("loginStatus") == "false"){
         alert("Please login")
-        window.location.assign("../html/index.html")
+        window.location.assign("../index.html")
     }
 
 
@@ -81,7 +81,7 @@ $.get("https://5fc1a1c9cb4d020016fe6b07.mockapi.io/api/v1/products", function (r
 })
 $("#logout-btn").click(function(){
     localStorage.setItem("loginStatus", false)
-    window.location.assign("../html/index.html")
+    window.location.assign("../index.html")
 })
 
 })
